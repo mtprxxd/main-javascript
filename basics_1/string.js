@@ -22,5 +22,39 @@
 // new_string = Number(string);
 // console.log(new_string);
 
+// Methods of string
+
+// let str = "My name is Netflix";
+// console.log(str.anchor("Huehuehue"));
 
 
+// const newStr = "Fast X 2023 Making of & Behind the Scenes";
+// let indexValue = 3;
+// console.log(`The index value ${indexValue} returns ${newStr.charAt(indexValue)}`);
+// indexValue = -3;
+// console.log(`The index value ${indexValue} returns ${newStr.at(indexValue)}`);
+
+
+// const anotherStr = "manmeet";
+// console.log(anotherStr.big());
+
+
+// const blink = "BlinkiT";
+// console.log(blink.blink());
+
+
+// const bold = "Bold Karde";
+// console.log(bold.bold());
+
+
+// const charCodeAt = "I'm learning javascript";
+// let indexValue1 = 8;
+// console.log(`The Character ${charCodeAt.charCodeAt(indexValue1)} returns the code ${charCodeAt.charAt(indexValue1)}`); 
+
+
+// const symbol = "%@#$&☃★♲";
+// let indexValue2 = 6; 
+// console.log(`The symbol ${symbol.charAt(indexValue2)} returns the value ${symbol.codePointAt(indexValue2)}`);
+
+
+const concat = "Manmeet Panwar";
