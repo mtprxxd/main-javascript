@@ -86,6 +86,18 @@
 
 
 
+// const line = "Aliens could be currently watching ancient human civilization due to speed of light";
+// const word = "human";
+// console.log(`The word "${word}" ${line.includes(word) ? 'is' : 'is not'} in the line`);
+
+
+
+// const paragraph = "I think Yash's dog is cuter than your dog!";
+// const search = "dog";
+// const searchItem = paragraph.indexOf(search);
+// console.log(`The index value of "${search}" is ${searchItem}`);
+// console.log(`The 2nd index value of "${search}" is ${paragraph.indexOf(search,searchItem+1)}`);
+
 
 
 
