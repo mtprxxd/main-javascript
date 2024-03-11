@@ -57,4 +57,22 @@
 // console.log(`The symbol ${symbol.charAt(indexValue2)} returns the value ${symbol.codePointAt(indexValue2)}`);
 
 
-const concat = "Manmeet Panwar";
+// const concat1 = "Manmeet";
+// const concat2 = "Panwar";
+// console.log(concat1.concat(' ', concat2));
+// console.log(concat2.concat(' ', concat2));
+// console.log(concat2.concat(' ', concat1));
+
+
+// const End = "It's my opinion!";
+// console.log(End.endsWith("opinion!"));
+// console.log(End.endsWith("opinion"));
+// console.log(End.endsWith("opinion",15));
+
+
+// const fix = "Huehuehue";
+// console.log(fix.fixed());
+
+
+
+
