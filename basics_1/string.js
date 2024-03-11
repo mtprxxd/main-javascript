@@ -75,4 +75,20 @@
 
 
 
+// console.log(String.fromCharCode(45,0,48,98,666667));
+
+// console.log(String.fromCodePoint("_")); 
+// console.log(String.fromCodePoint(Infinity)); 
+// console.log(String.fromCodePoint(-1)); 
+// console.log(String.fromCodePoint(3.14)); 
+// console.log(String.fromCodePoint(3e-2)); 
+// console.log(String.fromCodePoint(NaN)); 
+
+
+
+
+
+
+
+
 
