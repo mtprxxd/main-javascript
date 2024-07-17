@@ -1,6 +1,6 @@
 // singleTon
 
-// Object literals
+// no Object literals(singleTon)
 
 // const anySym = Symbol("huehuehue");
 
@@ -16,7 +16,8 @@ const anyObj = {
     activeDays: ["Monday","friday","sunday"]
 
 }
-console.log(anyObj);
+console.log(anyObj.email);
+// console.log(anyObj[ema  
 // console.log(anyObj.name);
 // console.log(anyObj["name"]);
 // console.log(anyObj[age]);
