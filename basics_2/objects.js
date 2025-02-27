@@ -17,7 +17,7 @@ const anyObj = {
 
 }
 console.log(anyObj.email);
-// console.log(anyObj[ema  
+// console.log(anyObj[email]);  
 // console.log(anyObj.name);
 // console.log(anyObj["name"]);
 // console.log(anyObj[age]);
