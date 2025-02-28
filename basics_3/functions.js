@@ -78,3 +78,28 @@
 
 
 // --------------Objects in function-------------------
+const functionObject = {
+    name: "manmeet",
+    age: 23
+}
+
+function functionObjectBlock (anyObject){
+    // console.log(`My name is ${anyObject.name} and age is ${anyObject.age}`);
+    
+}
+// functionObjectBlock(functionObject);
+functionObjectBlock({
+    name: "manmeet",
+    age: 23
+});
+
+// ---------Arrays in functions------------------
+
+const Array = [20,30,40,50];
+
+function arrayFunction(getArray){
+    console.log(`the first element is ${getArray[0]} and last element is ${getArray[3]}`);
+    
+}
+// arrayFunction(Array)
+arrayFunction([20,30,40,50])
