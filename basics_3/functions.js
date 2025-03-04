@@ -53,16 +53,16 @@
 // function userLoggedInText(username){
 
 // at first we declared or fix the value or name or parameter
-// function userLoggedInText(username = "KR$NA"){
-//     if (username===undefined) {
-//         return
-//     }
-//     else 
-//     return `${username} just logged in`
-// }
+function userLoggedInText(username = "KR$NA"){
+    if (username===undefined) {
+        return 
+    }
+    else 
+    return `${username} just logged in`
+}
 
-// // const showResult =userLoggedInText("KR$NA");
-// // console.log(showResult);
+// const showResult =userLoggedInText("KR$NA");
+// console.log(showResult); 
 // console.log(userLoggedInText());
 
 
@@ -78,28 +78,28 @@
 
 
 // --------------Objects in function-------------------
-const functionObject = {
-    name: "manmeet",
-    age: 23
-}
+// const functionObject = {
+//     name: "manmeet",
+//     age: 23
+// }
 
-function functionObjectBlock (anyObject){
+// function functionObjectBlock (anyObject){
     // console.log(`My name is ${anyObject.name} and age is ${anyObject.age}`);
     
-}
+// }
 // functionObjectBlock(functionObject);
-functionObjectBlock({
-    name: "manmeet",
-    age: 23
-});
+// functionObjectBlock({
+//     name: "manmeet",
+//     age: 23
+// });
 
 // ---------Arrays in functions------------------
 
-const Array = [20,30,40,50];
+// const Array = [20,30,40,50];
 
-function arrayFunction(getArray){
-    console.log(`the first element is ${getArray[0]} and last element is ${getArray[3]}`);
+// function arrayFunction(getArray){
+//     console.log(`the first element is ${getArray[0]} and last element is ${getArray[3]}`);
     
-}
-// arrayFunction(Array)
-arrayFunction([20,30,40,50])
+// }
+// // arrayFunction(Array)
+// arrayFunction([20,30,40,50])
