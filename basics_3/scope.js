@@ -16,17 +16,35 @@
 
 // -------------NESTED SCOPE------------------
 // it's like an ice-cream where the parent can,t take the ice-cream or function access from their child function but in case of child element they can directly access the function
-function papa() {
-    const NAME = "rajesh"
+// function papa() {
+//     const NAME = "rajesh"
 
-    function beta() {
-        const name  = "mani"
-        console.log(NAME)
-    }
-    // console.log(name);
-    beta()
+//     function beta() {
+//         const name  = "mani"
+//         console.log(NAME)
+//     }
+//     // console.log(name);
+//     beta()
     
-}
-papa()
+// }
+// papa()
+
+
+// if-else based scope
+
+// function dash() {
+//     if (true) {
+//         const name = "manmeet"
+//         if (name==="manmeet") {
+//             const workSpace = "developer"
+//             console.log(name);
+            
+//         }
+//     }
+    // console.log(workSpace); not defined
+    
+// }
+// dash()
+
 
 
