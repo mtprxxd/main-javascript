@@ -43,10 +43,10 @@ for (const [key,value] of map) {
 const newObject ={
     "greet": "Hello World!"
 }
-// for (const key in newObject) {
-//     console.log(`The First ${key} is`,newObject[key]);
+for (const key in newObject) {
+    // console.log(`The First ${key} is`,newObject[key]);
     
-// };
+};
 
 
 // for in loop in arrays always return the keys in the form of numbers and but in objects we customize the keys and values
@@ -55,6 +55,60 @@ for (const key in greeting) {
     // console.log(key);
     
 };
+
+
+// -----------For Each loop-------------------
+
+const langs = ["js","cpp","c","rust","ruby"]
+
+// with normal function
+langs.forEach(function (item) {
+    // console.log(item);
+    
+});
+
+// by arrow function
+langs.forEach((items) =>{
+    // console.log(items);
+})
+
+// different method of function
+function printMe(items) {
+    // console.log(items);
+    
+}
+langs.forEach(printMe)
+
+// basic case of array in loops
+
+langs.forEach((items,index,arr) =>{
+    // console.log(items,index,arr);
+})
+
+
+// -------Objects in Arrays in case of forEach loop------
+
+const ObjectsInArray = [
+    {
+        cityName: "faridabad",
+        cityPin: 121004
+    },
+    {
+        cityName: "delhi",
+        cityPin: 121005
+    },
+    {
+        cityName: "Mumbai",
+        cityPin: 121006
+    }
+]
+ObjectsInArray.forEach((items) =>{
+    // console.log(items.cityName);
+    
+})
+
+
+
 
 
 
