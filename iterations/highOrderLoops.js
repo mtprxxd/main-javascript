@@ -22,6 +22,7 @@ for (const greeting of greet) {
 const map = new Map()
 map.set("Bollywood", "India")
 map.set("Hollywood", "USA")
+  
 
 // this will return a new array with separate elements
 for (const mapping of map) {
@@ -29,7 +30,7 @@ for (const mapping of map) {
     
 }
 
-// this will return the value of array
+// this will return the value of array also destructure an array
 for (const [key,value] of map) {
     // console.log(key, "-->",value);
     
