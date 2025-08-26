@@ -6,7 +6,7 @@ const read = langs.forEach((items)=>{
 // so what is happening here?
 // sometime we just want to return some particular value not to print or display on operation.here forEach loops fails!
 });
-// console.log(read)
+// console.log(read)   
 
 
 // -----------------Filter map----------------------
@@ -87,6 +87,7 @@ const filter_r = names.filter(r_names => r_names.startsWith('R') || r_names.star
 // map() is used to update the value in original array 
 // also we can perform chaining by using multiple map() method or filter()
 
+// question- How can you combine filter() with map() to get the names of users above 18 years from a user list?
 const get_names = [
         {
                 name : "Manmeet",
@@ -112,11 +113,19 @@ const get_names = [
 
 const map_filter = get_names
                             .map((nums) => nums.age * 9 + 5)
-                            .map((nums) => nums.age - 1)
-                            .filter((nums) => nums.age >= 18 )
+                            .map((nums) => nums - 1)
+                            .filter((nums) => nums >= 18 )
 
-console.log(map_filter);
+// console.log(map_filter);
 
+
+
+// ---------------------Reduce-------------------------
+
+const og_arr = [1,2,3,4,5]
+// const int_value = 0
+const red_arr = og_arr.reduce((i,n) => (i + n),0)
+console.log(red_arr)
 
 
 
