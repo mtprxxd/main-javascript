@@ -14,7 +14,7 @@
         }
     </style>
 </head>
-<body class="container">
+<body class="container" style="background-color: #212121; color: #fff;" >
     <div class = "title">
         <h1 class="para" id = "paragraph"
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -40,5 +40,35 @@
 </form>
 <div id="output"></div>
 
+ <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
 </body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    // to display the all elements present in div with the help of loops
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+// ChildNodes basically counts every break line point as text and the element present in the line
+    console.log("NODES: ", parent.childNodes);
+</script>
 </html>
