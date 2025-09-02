@@ -21,6 +21,9 @@
         </ul>
 
     </div>
+    <div id="container">
+
+    </div>
     
     <button onclick="changeImage()">Change Image</button>
 </body>
@@ -30,23 +33,23 @@
 // console.log(_replace)
 
 
-const change_color = document.querySelector('.title')
-change_color.style.color = 'blue'
+// const change_color = document.querySelector('.title')
+// change_color.style.color = 'blue'
 
-const addItem = function addNewItem(list) {
-    const assign = document.createElement('li')
-    assign.innerHTML = `${list}`
-    document.querySelector('#languages').appendChild(assign)
+// const addItem = function addNewItem(list) {
+//     const assign = document.createElement('li')
+//     assign.innerHTML = `${list}`
+//     document.querySelector('#languages').appendChild(assign)
     
-}
-addItem('javascript')
+// }
+// addItem('javascript')
  
 
 
 // const rem_last = document.querySelector('#languages')
 // rem_last.lastElementChild.remove()
                 // OR
-const Rem_last = document.querySelector('li:last-child')
+// const Rem_last = document.querySelector('li:last-child')
 // Rem_last.remove()
 
 
@@ -55,11 +58,17 @@ const Rem_last = document.querySelector('li:last-child')
 //     const img = document.getElementById('uniqueImg')
 //     img.src = "image2.jpg"
 // }
-function changeImage() {
-  const img = document.getElementById("myImage")
-  img.src = "image2.jpg"
-}
+// function changeImage() {
+//   const img = document.getElementById("myImage")
+//   img.src = "image2.jpg"
+// }
 
+
+// dynamically creating a button and append to id container
+
+const button = document.createElement('button')
+button.textContent = "click me"
+const created_btn = document.getElementById('container').appendChild(button)
 
 
 
