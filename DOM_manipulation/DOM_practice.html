@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img id="myImage" src="image1.jpg" width="200" height="200">
+    <!-- <img id="myImage" src="image1.jpg" width="200" height="200"> -->
     <title>DOM Practice</title>
 </head>
 <body class="container" style="background-color: #212121; color: #fff;">
@@ -25,7 +25,15 @@
 
     </div>
     
-    <button onclick="changeImage()">Change Image</button>
+    <!-- <button onclick="changeImage()">Change Image</button> -->
+<ul id="myList">
+  <li>JavaScript</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>C++</li>
+</ul>
+
+<button onclick="removeItem(1)">Remove 2nd Item</button>
 </body>
 <script>
 // const _replace = document.getElementById('demo')
@@ -70,6 +78,19 @@ const button = document.createElement('button')
 button.textContent = "click me"
 const created_btn = document.getElementById('container').appendChild(button)
 
+
+
+// Delete a specific <li> element from a <ul> by its index (e.g., remove the 2nd item).
+
+function removeItem(index) {
+  const list = document.getElementById("myList");
+  const items = list.getElementsByTagName("li");
+  if (index >= 0 && index < items.length) {
+    list.removeChild(items[index]);
+  } else {
+    alert("Invalid index");
+  }
+}
 
 
 
