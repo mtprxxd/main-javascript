@@ -10,6 +10,11 @@ body {
     justify-content: center; 
     align-items: center;     
 }
+#heading{
+    position: absolute;
+    left: 600px;
+    top: 45px;
+}
 
 .app {
   width: 500px;
