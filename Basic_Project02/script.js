@@ -1,2 +1,12 @@
-const h = document.getElementById('height')
-const w = document.getElementById('weight')
+const form = document.querySelector('form')
+
+form.addEventListener('submit',function(e){
+    e.defaultPrevented()
+
+    const height = parseInt(document.querySelector('#height').value)
+    const weight = parseInt(document.querySelector('#weight').value)
+    const result = document.querySelector('results')
+
+    if(height === ''|| height < 0 || isNaN(height))
+
+})

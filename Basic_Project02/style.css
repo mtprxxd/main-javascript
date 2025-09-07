@@ -2,8 +2,10 @@
   width: 575px;
   margin: 0 auto;
   height: 680px;
-  background-color: #dfdfdc;
+  background-color: #e6d7f1;
   padding-left: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(122, 122, 122, 0.5);;
 }
 #height,
 #weight {
@@ -32,9 +34,8 @@ button {
   background-color: #fff;
   padding: 1px 20px;
   border-radius: 8px;
-  color: #212121;
+  color: #414141;
   text-decoration: none;
-  border: 2px solid #212121;
 
   font-size: 25px;
 }
@@ -44,7 +45,25 @@ button:hover{
 }
 
 h1 {
-  padding-left: 15px;
-  padding-top: 25px;
+  position: absolute;
+  left: 630px;
+  top: 100px;
   
+  
+  
+}
+form{
+  position: absolute;
+  left: 600px;
+  top: 200px;
+  
+}
+#orange{
+  color: rgb(230, 97, 52);
+}
+#green{
+  color: rgb(4, 196, 4);
+}
+#red{
+  color: red;
 }
