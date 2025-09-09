@@ -1,4 +1,4 @@
-const form = document.querySelector('form')
+const form = document.querySelector('form');
 
 
 form.addEventListener('submit',function(e){
@@ -6,7 +6,9 @@ form.addEventListener('submit',function(e){
 
     const height = parseInt(document.querySelector('#height').value)
     const weight = parseInt(document.querySelector('#weight').value)
-    const result = document.querySelector('#results')
+    const result = document.querySelector('#results');
+    
+    
     
     
     if(height === ''|| height < 0 || isNaN(height)){
@@ -20,9 +22,14 @@ form.addEventListener('submit',function(e){
         result.style.color = 'blue'
         result.style.fontSize = '20px'
         if (bmi < 18.5) {
-            
+            result.style.backgroundColor = "yellow"
+        }else if(bmi >18.5 || bmi <24.9 ){
+            result.style.backgroundColor = "yellow"
+        }else if(bmi > 24.9){
+            result.style.backgroundColor = "yellow"
+        }else{
+            result.style.backgroundColor = null
         }
-           
     }
     
 
