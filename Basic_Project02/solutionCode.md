@@ -1,3 +1,10 @@
+# Basic Project 2
+
+## BMI calculator
+
+# solution code
+```javascript
+
 const form = document.querySelector('form');
 
 
@@ -34,3 +41,7 @@ form.addEventListener('submit',function(e){
     
 
 })
+
+
+
+```
