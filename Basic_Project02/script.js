@@ -30,7 +30,8 @@ form.addEventListener('submit',function(e){
         }
     }
     
-
+    document.querySelector('#height').value = ''
+    document.querySelector('#weight').value = ''
     
 
 })

@@ -20,13 +20,7 @@ format.addEventListener('submit',function(e){
         result.innerHTML = `<span style = "color: #FF0000; font-size: 16px;">No! ${userInput} doesn't match any guess</span>`
     }
 
-    const create_array = new Array()
-    create_array.forEach(element=>{
-        create_array.push(userInput) =element
-        create_array.
-        
-
-    })
+   
 })
     
 
