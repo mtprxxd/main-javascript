@@ -10,6 +10,7 @@ format.addEventListener('submit',function(e){
     e.preventDefault() 
     
     const userInput = parseInt(document.querySelector('#guessField').value)
+    const arr_guess = parseInt(document.querySelector('.guesses').value)
 
     if(userInput === '' || isNaN(userInput)){
         result.innerHTML = `<span>Please enter a number</span>`
@@ -18,6 +19,14 @@ format.addEventListener('submit',function(e){
     }else {
         result.innerHTML = `<span style = "color: #FF0000; font-size: 16px;">No! ${userInput} doesn't match any guess</span>`
     }
+
+    const create_array = new Array()
+    create_array.forEach(element=>{
+        create_array.push(userInput) =element
+        create_array.
+        
+
+    })
 })
     
 
