@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: aliceblue;">Manmeet</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // Set TimeOut function working
+    // const timeOut = function() {
+    //     console.log("Manmeet")
+    // }
+
+    // const changeMe = function(){
+    //     document.querySelector('h1').innerHTML = "Panwar"
+    //     console.log("changed")
+    // }
+    // const cleartime = setTimeout(changeMe,3000)
+
+    //     document.querySelector('#mani').addEventListener('click',function(){
+    //         clearTimeout(cleartime)
+    //         console.log("Stopped")
+    //     })
+
+
+
+
+    // Set Interval function working
+
+       let timer; 
+
+       document.querySelector('#start').addEventListener('click', function () {
+         if (!timer) { 
+            timer = setInterval(function (str) {
+            console.log(str,"Manmeet");
+        }, 1000,"Begin");
+    }
+});
+       document.querySelector('#stop').addEventListener('click', function () {
+         
+            clearInterval(timer)
+            console.log("Stopped")
+        });
+ 
+    
+
+
+
+
+    
+</script>
+</html>
