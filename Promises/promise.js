@@ -1,26 +1,26 @@
-// const promiseOne = new Promise(function(resolve,reject){
-//     setTimeout(function () {
-//         console.log("async task complete");
-//         // promise will consume only if we use resolve() in here becoz they fulfill with each other
-//         resolve()
-//     },1000)
-// })
-// promiseOne.then(function(){
-//     console.log("promise consumed")
-// })
+const promiseOne = new Promise(function(resolve,reject){
+    setTimeout(function () {
+        console.log("async task complete");
+        // promise will consume only if we use resolve() in here becoz they fulfill with each other
+        resolve()
+    },1000)
+})
+promiseOne.then(function(){
+    console.log("promise consumed")
+})
 
 
 
-// const promiseTwo = new Promise(function(resolve,reject){
-//     setTimeout(function () {
-//         console.log("async task complete2");
-//         // we can pass the parameters inside resolve as an object.
-//         resolve({name: "Manmeet",email: "huehue@example.com"})
-//     },2000)
-// })
-// promiseTwo.then(function(view){
-//     console.log(view)
-// })
+const promiseTwo = new Promise(function(resolve,reject){
+    setTimeout(function () {
+        console.log("async task complete2");
+        // we can pass the parameters inside resolve as an object.
+        resolve({name: "Manmeet",email: "huehue@example.com"})
+    },2000)
+})
+promiseTwo.then(function(view){
+    console.log(view)
+})
 
 
 
@@ -68,23 +68,58 @@
 
 
 // we can either use try and catch to handle the errors
- const promiseFive = new Promise(function(resolve,reject){
-    setTimeout(function () {
-        let error = true;
-        if(!error){
-            resolve({name: "Manmeet",password: "12345"})
-        } else{
-            reject("Error: Code Went Wrong")
-        }
-    },1000);
-});
-async function consumePromiseFive(){
-    try {
-        const response = await promiseFive
-        console.log(response);
-    } catch (error) {
-        console.log(error);
+//  const promiseFive = new Promise(function(resolve,reject){
+//     setTimeout(function () {
+//         let error = true;
+//         if(!error){
+//             resolve({name: "Manmeet",password: "12345"})
+//         } else{
+//             reject("Error: Code Went Wrong")
+//         }
+//     },1000);
+// });
+// async function consumePromiseFive(){
+//     try {
+//         const response = await promiseFive
+//         console.log(response);
+//     } catch (error) {
+//         console.log(error);
         
-    }
-}
-consumePromiseFive()
+//     }
+// }
+// consumePromiseFive()
+
+
+
+// API fetching using try catch method
+// async function fetchAPI() {
+//     try {
+//       const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//       const data = await response.json();
+//       console.log(data.userId);
+//       console.log(data.title);
+      
+      
+//     } 
+//     catch(error) {
+//         console.log("Error:", error);
+        
+//     }
+// }
+// fetchAPI()
+
+
+
+// using .then.catch method
+fetch('https://jsonplaceholder.typicode.com/todos/1').then((response)=>
+{
+    return response.json();
+}).then((response)=>{
+console.log(response);
+
+}).catch((err)=>{
+    console.log("error:",err)
+})
+
+
+// now the question arises!, why the promises API request fulfilled before the promise consumption? let's discuss this in next FETCH file
